@@ -100,19 +100,17 @@ document.addEventListener('DOMContentLoaded', function() {
     btnContainer.appendChild(bottomBtn);
     document.body.appendChild(btnContainer);
 
-    // 滚动时动态显示/隐藏（滚动 > 300px 显示）
-    window.addEventListener('scroll', () => {
+    // 统一计算按钮状态，避免多个滚动监听器互相覆盖。
+    function updateButtonVisibility() {
         const show = window.pageYOffset > 300;
+        const nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 200;
         topBtn.style.opacity = show ? '1' : '0';
         topBtn.style.visibility = show ? 'visible' : 'hidden';
-        bottomBtn.style.opacity = show ? '1' : '0';
-        bottomBtn.style.visibility = show ? 'visible' : 'hidden';
-    });
+        bottomBtn.style.opacity = show && !nearBottom ? '1' : '0';
+        bottomBtn.style.visibility = show && !nearBottom ? 'visible' : 'hidden';
+    }
 
-    // 接近底部时隐藏「到底部」按钮
-    window.addEventListener('scroll', () => {
-        const nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 200;
-        bottomBtn.style.opacity = nearBottom ? '0' : '1';
-        bottomBtn.style.visibility = nearBottom ? 'hidden' : 'visible';
-    });
+    window.addEventListener('scroll', updateButtonVisibility, { passive: true });
+    window.addEventListener('resize', updateButtonVisibility);
+    updateButtonVisibility();
 });
