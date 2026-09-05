@@ -7,25 +7,9 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>RuHeYun</copyright><atom:link href="https://ruheyun.github.io/blog/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>论文阅读汇总</title>
-        <link>https://ruheyun.github.io/blog/p/paper-reading/</link>
-        <pubDate>Fri, 06 Feb 2026 14:55:22 +0800</pubDate>
-        
-        <guid>https://ruheyun.github.io/blog/p/paper-reading/</guid>
-        <description>&lt;img src="https://ruheyun.github.io/blog/p/paper-reading/123.jpg" alt="Featured image of post 论文阅读汇总" /&gt;&lt;h2 id=&#34;论文翻译笔记&#34;&gt;论文翻译笔记
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.github.io/blog/p/diffusion&#34; &gt;Deep Unsupervised Learning using Nonequilibrium Thermodynamics&lt;/a&gt; 2015&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.github.io/blog/p/ncsn&#34; &gt;Generative Modeling by Estimating Gradients of the Data Distribution&lt;/a&gt; 2019&lt;/p&gt;
-&lt;h2 id=&#34;论文阅读笔记&#34;&gt;论文阅读笔记
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.github.io/blog/p/gsa&#34; &gt;White-box Membership Inference Attacks against Diffusion Models&lt;/a&gt; 2025&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/2405.17724&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models&lt;/a&gt; 2024&lt;/p&gt;
-&lt;p&gt;Privacy Preserving Diffusion Models for Mixed-Type Tabular Data Generation 2025&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>📚阅读书单</title>
         <link>https://ruheyun.github.io/blog/p/readbook/</link>
-        <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+        <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
         
         <guid>https://ruheyun.github.io/blog/p/readbook/</guid>
         <description>&lt;img src="https://ruheyun.github.io/blog/p/readbook/readbook.jpg" alt="Featured image of post 📚阅读书单" /&gt;&lt;h2 id=&#34;-推荐&#34;&gt;🏆 推荐
@@ -119,6 +103,22 @@
     &gt;TinyPNG&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Windows 自带照片&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>论文阅读汇总</title>
+        <link>https://ruheyun.github.io/blog/p/paper-reading/</link>
+        <pubDate>Fri, 06 Feb 2026 14:55:22 +0800</pubDate>
+        
+        <guid>https://ruheyun.github.io/blog/p/paper-reading/</guid>
+        <description>&lt;img src="https://ruheyun.github.io/blog/p/paper-reading/123.jpg" alt="Featured image of post 论文阅读汇总" /&gt;&lt;h2 id=&#34;论文翻译笔记&#34;&gt;论文翻译笔记
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.github.io/blog/p/diffusion&#34; &gt;Deep Unsupervised Learning using Nonequilibrium Thermodynamics&lt;/a&gt; 2015&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.github.io/blog/p/ncsn&#34; &gt;Generative Modeling by Estimating Gradients of the Data Distribution&lt;/a&gt; 2019&lt;/p&gt;
+&lt;h2 id=&#34;论文阅读笔记&#34;&gt;论文阅读笔记
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.github.io/blog/p/gsa&#34; &gt;White-box Membership Inference Attacks against Diffusion Models&lt;/a&gt; 2025&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/2405.17724&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models&lt;/a&gt; 2024&lt;/p&gt;
+&lt;p&gt;Privacy Preserving Diffusion Models for Mixed-Type Tabular Data Generation 2025&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -3236,14 +3236,13 @@ $$&lt;h4 id=&#34;实验细节&#34;&gt;实验细节
 &lt;li&gt;部署：&lt;code&gt;Github&lt;/code&gt;，&lt;code&gt;Vercel&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;开发语言：&lt;code&gt;Go&lt;/code&gt;，&lt;code&gt;Html&lt;/code&gt;，&lt;code&gt;CSS&lt;/code&gt;，&lt;code&gt;JS&lt;/code&gt;，&lt;code&gt;yaml&lt;/code&gt;，&lt;code&gt;toml&lt;/code&gt;，&lt;code&gt;Markdown&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;版权声明：&lt;code&gt;CC BY-NC-SA 4.0&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;网站地址：&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://ruheyun.github.io&lt;/a&gt;，&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.vercel.app&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://ruheyun.vercel.app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;网站地址：&lt;a class=&#34;link&#34; href=&#34;https://ruheyun.github.io/blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ruheyun.github.io/blog/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;目前仅可以使用&lt;code&gt;简体中文&lt;/code&gt;，请勿切换其他语言，网站功能正在完善中&amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;搭建初衷&#34;&gt;搭建初衷
 &lt;/h3&gt;&lt;p&gt;作为一位计科学生，从大学开始便开始与计算机和编程语言打交道，本科主要学习语言是Java，但是学的不好，于是假期就想在B站看视频，学习Java相关知识，然后老师建议要做笔记，要开始写博客，学Java的课程第一节就教Markdown，以及注册CSDN和博客园。于是便接触到搭建博客、网站这些东西，想着身为计科学生，如果可以搭建一个自己的网站记录学习情况和笔记肯定很酷，这可能就是这个网站的来源。&lt;/p&gt;
-&lt;p&gt;那时我大二，自己写了（模仿B站大佬写的哈哈哈）一个由bootstrap为前端，Java为后端的简约博客，但是太简约了，而且需要服务器部署才行，但是又不想花钱买服务器部署网站，于是便开始寻找免费的方案。打开B站，搜索博客搭建，然后各种使用Hexo的快速建站视频吸引了我的注意力，便开始用Hexo搭建网站，搭配各种主题，很炫酷，为此没忍住花钱买了阿里云的域名（没错，最终又花钱了诶），并下定决心认知学习，每周至少写一篇博客（骗鬼去了哈）。寒假开学后，直接堕落，每天打游戏、看动漫、看漫画。每天教室-食堂-寝室，三点一线。上课金铲铲，食堂边吃饭边刷视频，回寝室看动漫、漫画。于是网站就废了。。。一气之下，删除了所有网站源码。&lt;/p&gt;
+&lt;p&gt;那时我大二，自己写了（模仿B站大佬写的哈哈哈）一个由bootstrap为前端，Java为后端的简约博客，需要服务器部署才行，但是又不想花钱买服务器部署网站，于是便开始寻找免费的方案。打开B站，搜索博客搭建，然后各种使用Hexo的快速建站视频吸引了我的注意力，便开始用Hexo搭建网站，搭配各种主题，很炫酷，为此没忍住花钱买了阿里云的域名（没错，最终又花钱了诶），并下定决心认知学习，每周至少写一篇博客（骗鬼去了哈）。寒假开学后，直接堕落，每天打游戏、看动漫、看漫画。每天教室-食堂-寝室，三点一线。上课金铲铲，食堂边吃饭边刷视频，回寝室看动漫、漫画。于是网站就废了。。。一气之下，删除了所有网站源码。&lt;/p&gt;
 &lt;p&gt;现在作为研究生（混上了），每天在实验室看论文、做笔记，于是又萌发了搭建网站记笔记的念头，于是又开始搭建网站了，便开始了使用Hugo建站的过程，希望这次能坚持做笔记。。。&lt;/p&gt;
 &lt;h3 id=&#34;网站内容&#34;&gt;网站内容
 &lt;/h3&gt;&lt;p&gt;记录学习笔记，以及搭建网站的过程&lt;/p&gt;
@@ -3251,10 +3250,10 @@ $$&lt;h4 id=&#34;实验细节&#34;&gt;实验细节
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;昵称：RuHeYun&lt;/li&gt;
 &lt;li&gt;性别：男&lt;/li&gt;
-&lt;li&gt;生日：2001.08.XX&lt;/li&gt;
+&lt;li&gt;生日：2001.08.19&lt;/li&gt;
 &lt;li&gt;身份：计算机科学与技术在读研究生&lt;/li&gt;
 &lt;li&gt;研究方向：AIGC、数据安全&lt;/li&gt;
-&lt;li&gt;邮箱：ruheyun@qq.com，ruhe0819@gmail.com&lt;/li&gt;
+&lt;li&gt;邮箱：ruheyun@qq.com，yunchaozhao459@gmail.com&lt;/li&gt;
 &lt;li&gt;擅长：Python？Matlab？（好像有点废了，不知道写啥了，唉！技能树持续点亮中···）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;技能树&#34;&gt;技能树
@@ -3285,7 +3284,7 @@ $$&lt;h4 id=&#34;实验细节&#34;&gt;实验细节
 	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;生命不是要超越别人，而是要超越自己。  &amp;mdash;&amp;mdash;佚名&lt;/p&gt;
+&lt;p&gt;愿所有相遇，都恰逢其时；愿所有坚持，都终有回响！&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         </item>
@@ -3491,6 +3490,11 @@ $$&lt;h4 id=&#34;实验细节&#34;&gt;实验细节
 			&lt;/tr&gt;
 	&lt;/thead&gt;
 	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;文章显示由单栏改为双栏&lt;/td&gt;
+					&lt;td&gt;2026-09-05&lt;/td&gt;
+					&lt;td&gt;单栏变双栏，删除了 vercel 站点&lt;/td&gt;
+			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;页脚添加字数统计&lt;/td&gt;
 					&lt;td&gt;2026-02-05&lt;/td&gt;
@@ -4053,8 +4057,8 @@ $$</description>
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;links: 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - title: RuHeYun
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    description: 喜欢在0和1之间折腾的计科小白一枚~.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    website: https://ruheyun.github.io/
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    image: https://ruheyun.github.io/img/avatar_hu_fc0063c7379d43fb.png
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    website: https://ruheyun.github.io/blog/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    image: https://ruheyun.github.io/blog/img/avatar_hu_fc0063c7379d43fb.png
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
