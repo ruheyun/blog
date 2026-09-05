@@ -10,7 +10,7 @@
 <meta property='og:description' content="Markdown语法的简单使用笔记。">
 <meta property='og:url' content='https://ruheyun.github.io/blog/p/markdown-syntax/'>
 <meta property='og:site_name' content='RuHeYun'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Markdown' /><meta property='article:published_time' content='2022-06-18T11:35:06&#43;08:00'/><meta property='article:modified_time' content='2026-02-04T15:03:02&#43;08:00'/><meta property='og:image' content='https://ruheyun.github.io/blog/p/markdown-syntax/markdown-mark.jfif' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Markdown' /><meta property='article:published_time' content='2022-06-18T11:35:06&#43;08:00'/><meta property='article:modified_time' content='2026-09-05T16:28:47&#43;08:00'/><meta property='og:image' content='https://ruheyun.github.io/blog/p/markdown-syntax/markdown-mark.jfif' />
 <meta name="twitter:title" content="Markdown语法">
 <meta name="twitter:description" content="Markdown语法的简单使用笔记。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ruheyun.github.io/blog/p/markdown-syntax/markdown-mark.jfif' />
@@ -374,17 +374,20 @@
 <p><del>hello world！</del></p>
 <p><code>字体加下划线用：&lt;u&gt;hello world!&lt;/u&gt;</code></p>
 <p><u>hello world!</u></p>
-<p><code>字体下标表示用：H~2~o</code></p>
+<p><code>字体下标表示用：H~2~o</code> <code>部分markdown不能解析，需使用 H&lt;sub&gt;2&lt;/sub&gt;o</code></p>
 <p>H<del>2</del>o</p>
-<p><code>字体上标表示用：n^2^</code></p>
+<p>H<sub>2</sub>o</p>
+<p><code>字体上标表示用：n^2^</code> <code>部分markdown不能解析，需使用 n&lt;sup&gt;2&lt;/sup&gt;</code></p>
 <p>n^2^</p>
-<p><code>字体高亮用：==字体内容==</code></p>
+<p>n<sup>2</sup></p>
+<p><code>字体高亮用：==字体内容==</code> <code>部分markdown不能解析，需使用 &lt;mark&gt;hello world!&lt;/mark&gt;</code></p>
 <p>==hello world!==</p>
+<p><mark>hello world!</mark></p>
 <h2 id="表情符号">表情符号
 </h2><p><code>常用表情符号：:smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile:  :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary:</code></p>
 <p><code>:+1: :-1: :100: :clap: :bell: :gift: :question: :bomb: :heart: :coffee: :cyclone: :bow: :kiss: :pray: :sweat_drops: :hankey: :exclamation: :anger:</code></p>
-<p>:smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile:  :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary:</p>
-<p>:+1: :-1: :100: :clap: :bell: :gift: :question: :bomb: :heart: :coffee: :cyclone: :bow: :kiss: :pray: :sweat_drops: :hankey: :exclamation: :anger:</p>
+<p>&#x1f604; &#x1f606; &#x1f635; &#x1f62d; &#x1f630; &#x1f605;  &#x1f622; &#x1f624; &#x1f60d; &#x263a;&#xfe0f; &#x1f60e; &#x1f629;</p>
+<p>&#x1f44d; &#x1f44e; &#x1f4af; &#x1f44f; &#x1f514; &#x1f381; &#x2753; &#x1f4a3; &#x2764;&#xfe0f; &#x2615; &#x1f300; &#x1f647; &#x1f48b; &#x1f64f; &#x1f4a6; &#x1f4a9; &#x2757; &#x1f4a2;</p>
 <h2 id="引用">引用
 </h2><p><code>引用内容用：&gt; 内容</code></p>
 <p><code>二级引用用：&gt;&gt; 内容</code></p>
@@ -548,7 +551,7 @@
 
 
         <span>
-            最后更新于 2026-02-04
+            最后更新于 2026-09-05
         </span>
     </section><section class="article-lastmod">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
@@ -735,6 +738,12 @@
     
         
     
+        
+    
+        
+    
+        
+    
     
     
     
@@ -747,8 +756,8 @@
         <p style="font-size: 0.9em;">
             本站总访问量 <span id="vercount_value_site_pv">Loading...</span> 次
             总访客数 <span id="vercount_value_site_uv">Loading...</span> 人 ·
-            共发表了18篇文章  
-            总计40.13k字
+            共发表了21篇文章  
+            总计42.73k字
         </p>
         
         <p id="blog-runtime" style="text-align: left; font-size: 0.9em; margin: 0.5em 0; color: #888;">

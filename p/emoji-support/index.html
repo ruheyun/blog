@@ -394,8 +394,8 @@
 </ol>
 <h2 id="示例">示例：
 </h2><p>这是一个段落，中间可以使用 {{&lt; highlight go &gt;}}这样的内联短代码 {{&lt; /highlight &gt;}}。</p>
-<p>或者调用 emoji 函数：{{% emojify &ldquo;:smile:&rdquo; %}}</p>
-<p>当你在内容中写 {{% emojify &ldquo;:smile:&rdquo; %}} 时，Hugo 会去 <code>layouts/shortcodes/</code> 目录下寻找 <code>emojify.html</code> 模板文件。</p>
+<p>或者调用 emoji 函数：{{% emojify &ldquo;&#x1f604;&rdquo; %}}</p>
+<p>当你在内容中写 {{% emojify &ldquo;&#x1f604;&rdquo; %}} 时，Hugo 会去 <code>layouts/shortcodes/</code> 目录下寻找 <code>emojify.html</code> 模板文件。</p>
 <p>具体操作看本文<code>5.2.3</code>。</p>
 <h2 id="与块级短代码的区别">与块级短代码的区别：
 </h2><ul>
@@ -403,14 +403,14 @@
 <li><strong>块级短代码</strong>：单独成块，通常用于插入图片、视频等较大元素</li>
 </ul>
 <h2 id="在-emoji-场景中的使用">在 Emoji 场景中的使用：
-</h2><p>{{% emojify &ldquo;:smile:&rdquo; %}}   // 会渲染为 😄</p>
+</h2><p>{{% emojify &ldquo;&#x1f604;&rdquo; %}}   // 会渲染为 😄</p>
 <p>这样你就可以在不启用全局 <code>enableEmoji</code> 的情况下，有选择性地在特定位置使用 Emoji 了。</p>
 <blockquote>
 <p>但是好像这样做不行，下面是解决方案：</p>
 </blockquote>
 <h3 id="emojify-不是短代码而是模板函数"><code>emojify</code> 不是短代码，而是模板函数
 </h3><p>Hugo 的 <code>emojify</code> 是一个<strong>模板函数（template function）</strong>，<strong>不是内置短代码</strong>。因此以下写法<strong>无法直接使用</strong>：</p>
-<p>{{% emojify &ldquo;:smile:&rdquo; %}}   // 无效（Hugo会报错）</p>
+<p>{{% emojify &ldquo;&#x1f604;&rdquo; %}}   // 无效（Hugo会报错）</p>
 <h3 id="正确用法">正确用法
 </h3><h4 id="方式-1全局启用推荐">方式 1：全局启用（推荐）
 </h4><p>在 <code>hugo.toml</code>/<code>hugo.yaml</code> 中设置：</p>
@@ -454,7 +454,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
-<li>在 Markdown 中使用：{{% emojify &ldquo;:smile:&rdquo; %}} 会被渲染为 😄</li>
+<li>在 Markdown 中使用：{{% emojify &ldquo;&#x1f604;&rdquo; %}} 会被渲染为 😄</li>
 </ol>
 <p><strong>注意</strong>：不能更改themes文件夹下的文件，要复制到主文件夹对应文件夹下，如下图：</p>
 <img src="image-20260129142644914.png" alt="image-20260129142644914" style="zoom:80%;" />
@@ -469,7 +469,7 @@
 	</thead>
 	<tbody>
 			<tr>
-					<td>{{% emojify &ldquo;:smile:&rdquo; %}}</td>
+					<td>{{% emojify &ldquo;&#x1f604;&rdquo; %}}</td>
 					<td>❌</td>
 					<td><code>emojify</code> 不是短代码，不能这样用</td>
 			</tr>
@@ -723,6 +723,12 @@
     
         
     
+        
+    
+        
+    
+        
+    
     
     
     
@@ -735,8 +741,8 @@
         <p style="font-size: 0.9em;">
             本站总访问量 <span id="vercount_value_site_pv">Loading...</span> 次
             总访客数 <span id="vercount_value_site_uv">Loading...</span> 人 ·
-            共发表了18篇文章  
-            总计40.13k字
+            共发表了21篇文章  
+            总计42.73k字
         </p>
         
         <p id="blog-runtime" style="text-align: left; font-size: 0.9em; margin: 0.5em 0; color: #888;">

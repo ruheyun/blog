@@ -106,6 +106,134 @@
 </description>
         </item>
         <item>
+        <title>常用数学公式</title>
+        <link>https://ruheyun.github.io/blog/p/math/</link>
+        <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ruheyun.github.io/blog/p/math/</guid>
+        <description>&lt;img src="https://ruheyun.github.io/blog/p/math/math.jpg" alt="Featured image of post 常用数学公式" /&gt;&lt;h1 id=&#34;数学公式&#34;&gt;数学公式
+&lt;/h1&gt;&lt;h2 id=&#34;泰勒展开式&#34;&gt;泰勒展开式
+&lt;/h2&gt;&lt;p&gt;定理：
+设 $n$ 是一个正整数。如果定义在一个包含 $a$ 的区间上的函数 $f$ 在 $a$ 点处 $n+1$ 次可导，那么对于这个区间上的任意 $x$ ，都有：
+&lt;/p&gt;
+$$
+f(x) = f(a) + \frac{f&#39;(a)}{1!}(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2 + \dots + \frac{f^{(n)}(a)}{n!}(x-a)^n + R_n(x)
+$$&lt;p&gt;
+其中的多项式称为函数在 $a$ 处的泰勒展开式，剩余的 $R_n(x)$ 是泰勒公式的余项，是 $(x-a)^n$ 的高阶无穷小。&lt;/p&gt;
+&lt;p&gt;常用展开式：
+&lt;/p&gt;
+$$
+e^{x}=\sum_{n=0}^{\infty} \frac{1}{n !} x^{n}=1+x+\frac{1}{2 !} x^{2}+\cdots ,x\in(-\infty,+\infty)
+$$$$
+\sin x=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)!} x^{2n+1}=x-\frac{1}{3!}x^{3}+\frac{1}{5!} x^{5}+\cdots, x \in(-\infty,+\infty)
+$$$$
+\cos x=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2 n) !} x^{2 n}=1-\frac{1}{2 !} x^{2}+\frac{1}{4 !} x^{4}+\cdots, x \in(-\infty,+\infty)
+$$$$
+ \ln (1+x)=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{n+1} x^{n+1}=x-\frac{1}{2} x^{2}+\frac{1}{3} x^{3}+\cdots, x \in(-1,1]
+$$$$
+ \frac{1}{1-x}=\sum_{n=0}^{\infty} x^{n}=1+x+x^{2}+x^{3}+\cdots, x \in(-1,1)
+$$$$
+\frac{1}{1+x}=\sum_{n=0}^{\infty}(-1)^{n} x^{n}=1-x+x^{2}-x^{3}+\cdots, x \in(-1,1)
+$$$$
+ (1+x)^{\alpha}=1+\sum_{n=1}^{\infty} \frac{\alpha(\alpha-1) \cdots(\alpha-n+1)}{n !} x^{n}=1+\alpha x+\frac{\alpha(\alpha-1)}{2 !} x^{2}+\cdots, x \in(-1,1) 
+$$&lt;h2 id=&#34;laplace-原理&#34;&gt;Laplace 原理
+&lt;/h2&gt;&lt;p&gt;定理：
+一系列指数项求和的对数，在渐近极限下等于其中最大的指数值：
+&lt;/p&gt;
+$$
+\log \left( \sum_i e^{a_i} \right) \approx \max_i a_i
+$$&lt;p&gt;
+更精确地，对于包含温度参数 $\epsilon$（当 $\epsilon \to 0$ 时）的连续形式，它渐近等价于：
+&lt;/p&gt;
+$$
+\epsilon \log \left( \int e^{\frac{f(x)}{\epsilon}} \, dx \right) \approx \max_x f(x)
+$$&lt;p&gt;
+注：在物理学、统计学和机器学习中，==温度参数==（通常记为 $\epsilon$ 或 $T$ ）是一个调节系统“确定性”与“随机性”的控制变量。它借用了热力学中“温度”的概念：温度越高，系统越混乱（随机）；温度越低，系统越冷凝（倾向于最大值）。&lt;/p&gt;
+&lt;h2 id=&#34;赫尔德不等式&#34;&gt;赫尔德不等式
+&lt;/h2&gt;&lt;p&gt;Holder’s inequality&lt;/p&gt;
+&lt;p&gt;本质理解：
+两个函数乘积的积分，不会超过它们各自&amp;quot;大小&amp;quot;的乘积
+定义：
+对于实值函数 $f$ 和 $g$ ，以及满足 $\frac{1}{p} + \frac{1}{q} = 1$ 的 $p,q&gt;1$ ：
+&lt;/p&gt;
+$$
+\|fg\|_1 \leq \|f\|_p \|g\|_q
+$$&lt;p&gt;
+即：
+&lt;/p&gt;
+$$
+\int |f(x)g(x)|dx \leq \left(\int |f(x)|^p dx\right)^{\frac{1}{p}} \left(\int |g(x)|^q dx\right)^{\frac{1}{q}}
+$$&lt;p&gt;
+当 $p = q = 2$ 时，赫尔德不等式变为&lt;code&gt;柯西-施瓦茨不等式&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;琴生不等式&#34;&gt;琴生不等式
+&lt;/h2&gt;&lt;p&gt;Jensen&amp;rsquo;s inequality&lt;/p&gt;
+&lt;p&gt;简单理解：
+对一平均做凸函数变换，会小于等于先做凸函数变换再平均。
+基本性质：
+过一个凸函数上任意两点所作割线一定在这两点间的函数图象的上方，即：
+&lt;/p&gt;
+$$
+t f(x_1) + (1 - t) f(x_2) \geq f(tx_1 + (1 - t)x_2), \quad 0 \leq t \leq 1.
+$$&lt;p&gt;&lt;img src=&#34;https://ruheyun.github.io/blog/p/math/math1.png&#34;
+	width=&#34;767&#34;
+	height=&#34;586&#34;
+	srcset=&#34;https://ruheyun.github.io/blog/p/math/math1_hu_93894dc9c3a4fcee.png 480w, https://ruheyun.github.io/blog/p/math/math1_hu_29dfeedcc24d252f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Convex-function-graph.png&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;314px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;蒙特卡洛&#34;&gt;蒙特卡洛
+&lt;/h2&gt;&lt;p&gt;Monte Carlo&lt;/p&gt;
+&lt;p&gt;例子：$x$ 是一维随机变量，$p(x)$ 是 $x$ 的概率密度，$f(x)$ 是 $x$ 的标量函数，求 $f(x)$ 的期望：
+&lt;/p&gt;
+$$
+\mathbb{E}_p[f(x)] = \int p(x)f(x)dx
+$$&lt;p&gt;
+事实上，当 $x$ 的维度很高时，上述期望计算是高维积分，难以直接计算。
+蒙特卡洛方法：用平均值来近似期望值。当N很大时，由大数定律，平均值近似期望：&lt;/p&gt;
+$$
+\mathbb{E}_p[f(x)] \approx \frac{1}{N} \sum_{i=1}^N f(x_i) \quad x_i \sim p(x)
+$$&lt;p&gt;
+无偏推导：令 $\mu$ 为真实期望，$\hat{\mu}$ 为平均值
+&lt;/p&gt;
+$$
+E[\hat{\mu}]=E[\frac{1}{N} \sum_{i=1}^{N} f(x_i)]=\frac{1}{N} \sum_{i=1}^{N} E[f(x_i)]=\frac{1}{N} \sum_{i=1}^{N} \mu=\mu
+$$&lt;h2 id=&#34;jacobian-矩阵&#34;&gt;Jacobian 矩阵
+&lt;/h2&gt;&lt;p&gt;向量对向量求导得到的矩阵通常就是雅可比矩阵（Jacobian matrix）。&lt;/p&gt;
+&lt;h2 id=&#34;hessian-矩阵&#34;&gt;Hessian 矩阵
+&lt;/h2&gt;&lt;p&gt;对多元函数求&lt;strong&gt;一阶导数&lt;/strong&gt;得到的是&lt;strong&gt;梯度&lt;/strong&gt;，而对函数求&lt;strong&gt;二阶导数&lt;/strong&gt;（或者说对梯度再求一阶导数）得到的是&lt;strong&gt;黑塞矩阵（Hessian Matrix）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;常用的衡量两个概率分布 P，Q 的距离或差异方法。&lt;/p&gt;
+&lt;h2 id=&#34;total-variation-distance&#34;&gt;Total Variation Distance
+&lt;/h2&gt;&lt;p&gt;总变差距离：两个分布曲线之间‘面积差’的一半。缺点：高维时难以估计。&lt;/p&gt;
+&lt;p&gt;连续：&lt;/p&gt;
+$$D_{TV}(P, Q) = \frac{1}{2} \int \mid p(x) - q(x) \mid dx$$&lt;p&gt;离散：&lt;/p&gt;
+$$D_{TV}(P, Q) = \frac{1}{2} \sum_i \mid p_i - q_i \mid$$&lt;h2 id=&#34;kl-divergence&#34;&gt;KL Divergence
+&lt;/h2&gt;&lt;p&gt;KL 散度：用Q去近似P，会额外损失多少编码长度。最大似然估计（MLE）本质就是最小KL散度。&lt;/p&gt;
+&lt;p&gt;连续：&lt;/p&gt;
+$$D_{KL}(P \parallel Q) = \int p(x) log \frac{p(x)}{q(x)} dx$$&lt;blockquote&gt;
+&lt;p&gt;KL散度是非对称的，将P和Q换个位置后不等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;jensen-shannon-divergence&#34;&gt;Jensen-Shannon Divergence
+&lt;/h2&gt;&lt;p&gt;JS 散度：对称、有界、比KL稳定，常用于GAN的优化函数。&lt;/p&gt;
+&lt;p&gt;连续：&lt;/p&gt;
+$$JS(P, Q) = \frac{1}{2} D_{KL} (P \parallel M) + \frac{1}{2} D_{KL} (Q \parallel M)$$&lt;p&gt;其中：&lt;/p&gt;
+$$M = \frac{P + Q}{2}$$&lt;h2 id=&#34;fisher-divergence&#34;&gt;Fisher Divergence
+&lt;/h2&gt;&lt;p&gt;几何意义：两个分布的分数场，即概率流形上的梯度方向。基于分数的扩散模型中核心思想。&lt;/p&gt;
+&lt;p&gt;连续：&lt;/p&gt;
+$$D_F (P \parallel Q) = E_P [\parallel \nabla_x log p(x) - \nabla_x log q(x) \parallel^2]$$&lt;h2 id=&#34;wasserstein-distance&#34;&gt;Wasserstein Distance
+&lt;/h2&gt;&lt;p&gt;Earth Mover Distance&lt;/p&gt;
+&lt;p&gt;地球移动距离（推土机距离）：把P看作一堆土，Q看作目标土堆，将P搬运到Q的最小搬运成本。&lt;/p&gt;
+$$W(P, Q) = inf_{\gamma \in \prod(P, Q)} E_{(x,y) \sim \gamma} [\parallel x - y \parallel]$$&lt;h2 id=&#34;mahalanobis-distance&#34;&gt;Mahalanobis Distance
+&lt;/h2&gt;&lt;p&gt;马氏距离：考虑协方差后的‘真实欧式距离’。&lt;/p&gt;
+$$d_M(x,y) = \sqrt{(x - y)^T \Sigma^{-1} (x - y)}$$</description>
+        </item>
+        <item>
         <title>MathType使用笔记</title>
         <link>https://ruheyun.github.io/blog/p/mathtype/</link>
         <pubDate>Wed, 25 Feb 2026 11:09:36 +0800</pubDate>

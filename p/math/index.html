@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="AI、DP方向常用数学公式。">
+<title>常用数学公式</title>
+
+<link rel='canonical' href='https://ruheyun.github.io/blog/p/math/'>
+
+<link rel="stylesheet" href="/blog/scss/style.min.51cceb90d7a9557dd3e5b6e09cda7680e83fd94a44850db87e1810d18e5e6a55.css"><meta property='og:title' content="常用数学公式">
+<meta property='og:description' content="AI、DP方向常用数学公式。">
+<meta property='og:url' content='https://ruheyun.github.io/blog/p/math/'>
+<meta property='og:site_name' content='RuHeYun'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-05-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-09-05T16:28:47&#43;08:00'/><meta property='og:image' content='https://ruheyun.github.io/blog/p/math/math.jpg' />
+<meta name="twitter:title" content="常用数学公式">
+<meta name="twitter:description" content="AI、DP方向常用数学公式。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://ruheyun.github.io/blog/p/math/math.jpg' />
+    <link rel="shortcut icon" href="/blog/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/blog/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/blog/img/avatar_hu_fc0063c7379d43fb.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🥰</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/blog">RuHeYun</a></h1>
+            <h2 class="site-description">欢迎来到我的网站！</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/ruheyun'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/blog/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/logs/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-list-details"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 5h8" /><path d="M13 9h5" /><path d="M13 15h8" /><path d="M13 19h5" /><path d="M3 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" /><path d="M3 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" /></svg>
+                
+                <span>日志</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#泰勒展开式">泰勒展开式</a></li>
+    <li><a href="#laplace-原理">Laplace 原理</a></li>
+    <li><a href="#赫尔德不等式">赫尔德不等式</a></li>
+    <li><a href="#琴生不等式">琴生不等式</a></li>
+    <li><a href="#蒙特卡洛">蒙特卡洛</a></li>
+    <li><a href="#jacobian-矩阵">Jacobian 矩阵</a></li>
+    <li><a href="#hessian-矩阵">Hessian 矩阵</a></li>
+    <li><a href="#total-variation-distance">Total Variation Distance</a></li>
+    <li><a href="#kl-divergence">KL Divergence</a></li>
+    <li><a href="#jensen-shannon-divergence">Jensen-Shannon Divergence</a></li>
+    <li><a href="#fisher-divergence">Fisher Divergence</a></li>
+    <li><a href="#wasserstein-distance">Wasserstein Distance</a></li>
+    <li><a href="#mahalanobis-distance">Mahalanobis Distance</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/blog/p/math/">
+                <img src="/blog/p/math/math_hu_80b0c13c94a629e0.jpg"
+                        srcset="/blog/p/math/math_hu_80b0c13c94a629e0.jpg 800w, /blog/p/math/math_hu_17e2ceb0297cf1cf.jpg 1600w"
+                        width="800" 
+                        height="527" 
+                        loading="lazy"
+                        alt="Featured image of post 常用数学公式" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/blog/categories/other/" style="background-color: #2a9d8f; color: #fff;">
+                Other
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/blog/p/math/">常用数学公式</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            AI、DP方向常用数学公式。
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-05-12T00:00:00Z'>2026-05-12</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="数学公式">数学公式
+</h1><h2 id="泰勒展开式">泰勒展开式
+</h2><p>定理：
+设 $n$ 是一个正整数。如果定义在一个包含 $a$ 的区间上的函数 $f$ 在 $a$ 点处 $n+1$ 次可导，那么对于这个区间上的任意 $x$ ，都有：
+</p>
+$$
+f(x) = f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2 + \dots + \frac{f^{(n)}(a)}{n!}(x-a)^n + R_n(x)
+$$<p>
+其中的多项式称为函数在 $a$ 处的泰勒展开式，剩余的 $R_n(x)$ 是泰勒公式的余项，是 $(x-a)^n$ 的高阶无穷小。</p>
+<p>常用展开式：
+</p>
+$$
+e^{x}=\sum_{n=0}^{\infty} \frac{1}{n !} x^{n}=1+x+\frac{1}{2 !} x^{2}+\cdots ,x\in(-\infty,+\infty)
+$$$$
+\sin x=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)!} x^{2n+1}=x-\frac{1}{3!}x^{3}+\frac{1}{5!} x^{5}+\cdots, x \in(-\infty,+\infty)
+$$$$
+\cos x=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2 n) !} x^{2 n}=1-\frac{1}{2 !} x^{2}+\frac{1}{4 !} x^{4}+\cdots, x \in(-\infty,+\infty)
+$$$$
+ \ln (1+x)=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{n+1} x^{n+1}=x-\frac{1}{2} x^{2}+\frac{1}{3} x^{3}+\cdots, x \in(-1,1]
+$$$$
+ \frac{1}{1-x}=\sum_{n=0}^{\infty} x^{n}=1+x+x^{2}+x^{3}+\cdots, x \in(-1,1)
+$$$$
+\frac{1}{1+x}=\sum_{n=0}^{\infty}(-1)^{n} x^{n}=1-x+x^{2}-x^{3}+\cdots, x \in(-1,1)
+$$$$
+ (1+x)^{\alpha}=1+\sum_{n=1}^{\infty} \frac{\alpha(\alpha-1) \cdots(\alpha-n+1)}{n !} x^{n}=1+\alpha x+\frac{\alpha(\alpha-1)}{2 !} x^{2}+\cdots, x \in(-1,1) 
+$$<h2 id="laplace-原理">Laplace 原理
+</h2><p>定理：
+一系列指数项求和的对数，在渐近极限下等于其中最大的指数值：
+</p>
+$$
+\log \left( \sum_i e^{a_i} \right) \approx \max_i a_i
+$$<p>
+更精确地，对于包含温度参数 $\epsilon$（当 $\epsilon \to 0$ 时）的连续形式，它渐近等价于：
+</p>
+$$
+\epsilon \log \left( \int e^{\frac{f(x)}{\epsilon}} \, dx \right) \approx \max_x f(x)
+$$<p>
+注：在物理学、统计学和机器学习中，==温度参数==（通常记为 $\epsilon$ 或 $T$ ）是一个调节系统“确定性”与“随机性”的控制变量。它借用了热力学中“温度”的概念：温度越高，系统越混乱（随机）；温度越低，系统越冷凝（倾向于最大值）。</p>
+<h2 id="赫尔德不等式">赫尔德不等式
+</h2><p>Holder’s inequality</p>
+<p>本质理解：
+两个函数乘积的积分，不会超过它们各自&quot;大小&quot;的乘积
+定义：
+对于实值函数 $f$ 和 $g$ ，以及满足 $\frac{1}{p} + \frac{1}{q} = 1$ 的 $p,q>1$ ：
+</p>
+$$
+\|fg\|_1 \leq \|f\|_p \|g\|_q
+$$<p>
+即：
+</p>
+$$
+\int |f(x)g(x)|dx \leq \left(\int |f(x)|^p dx\right)^{\frac{1}{p}} \left(\int |g(x)|^q dx\right)^{\frac{1}{q}}
+$$<p>
+当 $p = q = 2$ 时，赫尔德不等式变为<code>柯西-施瓦茨不等式</code>。</p>
+<h2 id="琴生不等式">琴生不等式
+</h2><p>Jensen&rsquo;s inequality</p>
+<p>简单理解：
+对一平均做凸函数变换，会小于等于先做凸函数变换再平均。
+基本性质：
+过一个凸函数上任意两点所作割线一定在这两点间的函数图象的上方，即：
+</p>
+$$
+t f(x_1) + (1 - t) f(x_2) \geq f(tx_1 + (1 - t)x_2), \quad 0 \leq t \leq 1.
+$$<p><img src="/blog/p/math/math1.png"
+	width="767"
+	height="586"
+	srcset="/blog/p/math/math1_hu_93894dc9c3a4fcee.png 480w, /blog/p/math/math1_hu_29dfeedcc24d252f.png 1024w"
+	loading="lazy"
+	
+		alt="Convex-function-graph.png"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="130"
+		data-flex-basis="314px"
+	
+></p>
+<h2 id="蒙特卡洛">蒙特卡洛
+</h2><p>Monte Carlo</p>
+<p>例子：$x$ 是一维随机变量，$p(x)$ 是 $x$ 的概率密度，$f(x)$ 是 $x$ 的标量函数，求 $f(x)$ 的期望：
+</p>
+$$
+\mathbb{E}_p[f(x)] = \int p(x)f(x)dx
+$$<p>
+事实上，当 $x$ 的维度很高时，上述期望计算是高维积分，难以直接计算。
+蒙特卡洛方法：用平均值来近似期望值。当N很大时，由大数定律，平均值近似期望：</p>
+$$
+\mathbb{E}_p[f(x)] \approx \frac{1}{N} \sum_{i=1}^N f(x_i) \quad x_i \sim p(x)
+$$<p>
+无偏推导：令 $\mu$ 为真实期望，$\hat{\mu}$ 为平均值
+</p>
+$$
+E[\hat{\mu}]=E[\frac{1}{N} \sum_{i=1}^{N} f(x_i)]=\frac{1}{N} \sum_{i=1}^{N} E[f(x_i)]=\frac{1}{N} \sum_{i=1}^{N} \mu=\mu
+$$<h2 id="jacobian-矩阵">Jacobian 矩阵
+</h2><p>向量对向量求导得到的矩阵通常就是雅可比矩阵（Jacobian matrix）。</p>
+<h2 id="hessian-矩阵">Hessian 矩阵
+</h2><p>对多元函数求<strong>一阶导数</strong>得到的是<strong>梯度</strong>，而对函数求<strong>二阶导数</strong>（或者说对梯度再求一阶导数）得到的是<strong>黑塞矩阵（Hessian Matrix）</strong>。</p>
+<p>常用的衡量两个概率分布 P，Q 的距离或差异方法。</p>
+<h2 id="total-variation-distance">Total Variation Distance
+</h2><p>总变差距离：两个分布曲线之间‘面积差’的一半。缺点：高维时难以估计。</p>
+<p>连续：</p>
+$$D_{TV}(P, Q) = \frac{1}{2} \int \mid p(x) - q(x) \mid dx$$<p>离散：</p>
+$$D_{TV}(P, Q) = \frac{1}{2} \sum_i \mid p_i - q_i \mid$$<h2 id="kl-divergence">KL Divergence
+</h2><p>KL 散度：用Q去近似P，会额外损失多少编码长度。最大似然估计（MLE）本质就是最小KL散度。</p>
+<p>连续：</p>
+$$D_{KL}(P \parallel Q) = \int p(x) log \frac{p(x)}{q(x)} dx$$<blockquote>
+<p>KL散度是非对称的，将P和Q换个位置后不等。</p>
+</blockquote>
+<h2 id="jensen-shannon-divergence">Jensen-Shannon Divergence
+</h2><p>JS 散度：对称、有界、比KL稳定，常用于GAN的优化函数。</p>
+<p>连续：</p>
+$$JS(P, Q) = \frac{1}{2} D_{KL} (P \parallel M) + \frac{1}{2} D_{KL} (Q \parallel M)$$<p>其中：</p>
+$$M = \frac{P + Q}{2}$$<h2 id="fisher-divergence">Fisher Divergence
+</h2><p>几何意义：两个分布的分数场，即概率流形上的梯度方向。基于分数的扩散模型中核心思想。</p>
+<p>连续：</p>
+$$D_F (P \parallel Q) = E_P [\parallel \nabla_x log p(x) - \nabla_x log q(x) \parallel^2]$$<h2 id="wasserstein-distance">Wasserstein Distance
+</h2><p>Earth Mover Distance</p>
+<p>地球移动距离（推土机距离）：把P看作一堆土，Q看作目标土堆，将P搬运到Q的最小搬运成本。</p>
+$$W(P, Q) = inf_{\gamma \in \prod(P, Q)} E_{(x,y) \sim \gamma} [\parallel x - y \parallel]$$<h2 id="mahalanobis-distance">Mahalanobis Distance
+</h2><p>马氏距离：考虑协方差后的‘真实欧式距离’。</p>
+$$d_M(x,y) = \sqrt{(x - y)^T \Sigma^{-1} (x - y)}$$
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>根据CC BY-NC-SA 4.0许可</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2026-09-05
+        </span>
+    </section><section class="article-lastmod">
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+        <span><span id="vercount_value_page_pv">Loading...</span> 次</span>
+    </section>
+</footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/blog/p/readbook/">
+        
+        
+            <div class="article-image">
+                <img src="/blog/p/readbook/readbook.cf46cf5b82a2722933981d619c58a534_hu_38462ff4f9973196.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 📚阅读书单"
+                        data-key="readbook" 
+                        data-hash="md5-z0bPW4KicikzmB1hnFilNA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">📚阅读书单</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/blog/p/mathtype/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MathType使用笔记</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/blog/p/website-recommend/">
+        
+        
+            <div class="article-image">
+                <img src="/blog/p/website-recommend/website-img.586aa88e42521bd1e902eb0786817824_hu_a1571b57ee7e7fb2.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 网站/软件推荐"
+                        data-key="website-recommend" 
+                        data-hash="md5-WGqojkJSG9HpAusHhoF4JA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">网站/软件推荐</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="ruheyun/ruheyun.github.io"
+    data-repo-id="R_kgDORA4gWA"
+    data-category="Announcements"
+    data-category-id="DIC_kwDORA4gWM4C1aAn"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light_protanopia"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light_protanopia');
+            } else {
+                setGiscusTheme('dark_high_contrast');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2026 RuHeYun
+    </section>
+    
+    
+    
+    
+    
+     
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    
+    
+    
+
+    <section class="custom-footer-text">
+        <p style="text-align: left; font-size: 1.1em; margin: 0.5em 0;">
+            [ 天天熬夜 <span class="heartbeat">❤️</span> 迟早猝死 ]
+        </p>
+
+        <p style="font-size: 0.9em;">
+            本站总访问量 <span id="vercount_value_site_pv">Loading...</span> 次
+            总访客数 <span id="vercount_value_site_uv">Loading...</span> 人 ·
+            共发表了21篇文章  
+            总计42.73k字
+        </p>
+        
+        <p id="blog-runtime" style="text-align: left; font-size: 0.9em; margin: 0.5em 0; color: #888;">
+            这个网站已经运行了: <span id="runtime-value">Loading...</span>
+            <span class="floating-end">ღゝ◡╹)ノ♡</span>
+        </p>
+    </section>
+
+</footer>
+
+
+<style>
+     
+     
+    .custom-footer-text {
+        font-family: 'ZCOOL QingKe HuangYou', cursive, sans-serif;
+    }
+
+     
+    .custom-footer-text p:first-child {
+        font-size: 1.2em;
+         
+         
+    }
+
+
+    .heartbeat {
+        display: inline-block;
+        animation: heartbeat 1.5s ease-in-out infinite;
+        color: #e74c3c;  
+    }
+
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        15% { transform: scale(1.1); }
+        30% { transform: scale(1); }
+        45% { transform: scale(1.1); }
+        60% { transform: scale(1); }
+        75% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+      
+    .floating-end {
+        display: inline-block;
+        animation: float 3s ease-in-out infinite;
+         
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-3px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .heartbeat,
+        .floating-end {
+            animation: none;
+        }
+    }
+</style>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const startDate = new Date("2022-06-18T00:00:00+08:00");
+
+        function updateRuntime() {
+            const now = new Date();
+            const diffMs = now - startDate;
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            const diffHours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const diffMinutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+            const diffSeconds = Math.floor((diffMs % (1000 * 60)) / 1000);
+
+            const runtimeStr = `${diffDays} 天 ${diffHours} 小时 ${diffMinutes} 分钟 ${diffSeconds} 秒`;
+            const runtimeValue = document.getElementById('runtime-value');
+            if (runtimeValue) runtimeValue.textContent = runtimeStr;
+        }
+
+        
+        updateRuntime();
+        setInterval(updateRuntime, 1000);
+    });
+</script>
+
+<script src="/blog/js/scroll-buttons.js"></script>
+
+
+<script defer src="https://events.vercount.one/js"></script>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/blog/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: 'shcss';
+    src: url('/blog/font/SkyHeartClearSerifSC.woff2') format('woff2');
+    font-display: swap;
+  }
+
+  :root {
+    --base-font-family: 'shcss';
+  }
+</style>
+
+
+<style>
+    .highlight {
+         
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: linear-gradient(to bottom, transparent, var(--card-background));
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+        border: 0;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    const codeBlocks = document.querySelectorAll(".highlight");
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      const codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      const codeMoreBtn = document.createElement('button');
+      codeMoreBtn.type = 'button';
+      codeMoreBtn.setAttribute('aria-label', '展开代码块');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      const img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = '\/blog\/icons\/codeMore.png';
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox);
+    })
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCodeMoreBox);
+  } else {
+    initCodeMoreBox();
+  }
+</script>
+
+    </body>
+</html>

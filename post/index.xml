@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>RuHeYun</copyright>
-        <lastBuildDate>Sat, 05 Sep 2026 13:41:54 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 05 Sep 2026 16:28:47 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>📚阅读书单</title>
         <link>https://ruheyun.github.io/blog/p/readbook/</link>
         <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
@@ -107,6 +107,134 @@
 </description>
         </item>
         <item>
+        <title>常用数学公式</title>
+        <link>https://ruheyun.github.io/blog/p/math/</link>
+        <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ruheyun.github.io/blog/p/math/</guid>
+        <description>&lt;img src="https://ruheyun.github.io/blog/p/math/math.jpg" alt="Featured image of post 常用数学公式" /&gt;&lt;h1 id=&#34;数学公式&#34;&gt;数学公式
+&lt;/h1&gt;&lt;h2 id=&#34;泰勒展开式&#34;&gt;泰勒展开式
+&lt;/h2&gt;&lt;p&gt;定理：
+设 $n$ 是一个正整数。如果定义在一个包含 $a$ 的区间上的函数 $f$ 在 $a$ 点处 $n+1$ 次可导，那么对于这个区间上的任意 $x$ ，都有：
+&lt;/p&gt;
+$$
+f(x) = f(a) + \frac{f&#39;(a)}{1!}(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2 + \dots + \frac{f^{(n)}(a)}{n!}(x-a)^n + R_n(x)
+$$&lt;p&gt;
+其中的多项式称为函数在 $a$ 处的泰勒展开式，剩余的 $R_n(x)$ 是泰勒公式的余项，是 $(x-a)^n$ 的高阶无穷小。&lt;/p&gt;
+&lt;p&gt;常用展开式：
+&lt;/p&gt;
+$$
+e^{x}=\sum_{n=0}^{\infty} \frac{1}{n !} x^{n}=1+x+\frac{1}{2 !} x^{2}+\cdots ,x\in(-\infty,+\infty)
+$$$$
+\sin x=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)!} x^{2n+1}=x-\frac{1}{3!}x^{3}+\frac{1}{5!} x^{5}+\cdots, x \in(-\infty,+\infty)
+$$$$
+\cos x=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2 n) !} x^{2 n}=1-\frac{1}{2 !} x^{2}+\frac{1}{4 !} x^{4}+\cdots, x \in(-\infty,+\infty)
+$$$$
+ \ln (1+x)=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{n+1} x^{n+1}=x-\frac{1}{2} x^{2}+\frac{1}{3} x^{3}+\cdots, x \in(-1,1]
+$$$$
+ \frac{1}{1-x}=\sum_{n=0}^{\infty} x^{n}=1+x+x^{2}+x^{3}+\cdots, x \in(-1,1)
+$$$$
+\frac{1}{1+x}=\sum_{n=0}^{\infty}(-1)^{n} x^{n}=1-x+x^{2}-x^{3}+\cdots, x \in(-1,1)
+$$$$
+ (1+x)^{\alpha}=1+\sum_{n=1}^{\infty} \frac{\alpha(\alpha-1) \cdots(\alpha-n+1)}{n !} x^{n}=1+\alpha x+\frac{\alpha(\alpha-1)}{2 !} x^{2}+\cdots, x \in(-1,1) 
+$$&lt;h2 id=&#34;laplace-原理&#34;&gt;Laplace 原理
+&lt;/h2&gt;&lt;p&gt;定理：
+一系列指数项求和的对数，在渐近极限下等于其中最大的指数值：
+&lt;/p&gt;
+$$
+\log \left( \sum_i e^{a_i} \right) \approx \max_i a_i
+$$&lt;p&gt;
+更精确地，对于包含温度参数 $\epsilon$（当 $\epsilon \to 0$ 时）的连续形式，它渐近等价于：
+&lt;/p&gt;
+$$
+\epsilon \log \left( \int e^{\frac{f(x)}{\epsilon}} \, dx \right) \approx \max_x f(x)
+$$&lt;p&gt;
+注：在物理学、统计学和机器学习中，==温度参数==（通常记为 $\epsilon$ 或 $T$ ）是一个调节系统“确定性”与“随机性”的控制变量。它借用了热力学中“温度”的概念：温度越高，系统越混乱（随机）；温度越低，系统越冷凝（倾向于最大值）。&lt;/p&gt;
+&lt;h2 id=&#34;赫尔德不等式&#34;&gt;赫尔德不等式
+&lt;/h2&gt;&lt;p&gt;Holder’s inequality&lt;/p&gt;
+&lt;p&gt;本质理解：
+两个函数乘积的积分，不会超过它们各自&amp;quot;大小&amp;quot;的乘积
+定义：
+对于实值函数 $f$ 和 $g$ ，以及满足 $\frac{1}{p} + \frac{1}{q} = 1$ 的 $p,q&gt;1$ ：
+&lt;/p&gt;
+$$
+\|fg\|_1 \leq \|f\|_p \|g\|_q
+$$&lt;p&gt;
+即：
+&lt;/p&gt;
+$$
+\int |f(x)g(x)|dx \leq \left(\int |f(x)|^p dx\right)^{\frac{1}{p}} \left(\int |g(x)|^q dx\right)^{\frac{1}{q}}
+$$&lt;p&gt;
+当 $p = q = 2$ 时，赫尔德不等式变为&lt;code&gt;柯西-施瓦茨不等式&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;琴生不等式&#34;&gt;琴生不等式
+&lt;/h2&gt;&lt;p&gt;Jensen&amp;rsquo;s inequality&lt;/p&gt;
+&lt;p&gt;简单理解：
+对一平均做凸函数变换，会小于等于先做凸函数变换再平均。
+基本性质：
+过一个凸函数上任意两点所作割线一定在这两点间的函数图象的上方，即：
+&lt;/p&gt;
+$$
+t f(x_1) + (1 - t) f(x_2) \geq f(tx_1 + (1 - t)x_2), \quad 0 \leq t \leq 1.
+$$&lt;p&gt;&lt;img src=&#34;https://ruheyun.github.io/blog/p/math/math1.png&#34;
+	width=&#34;767&#34;
+	height=&#34;586&#34;
+	srcset=&#34;https://ruheyun.github.io/blog/p/math/math1_hu_93894dc9c3a4fcee.png 480w, https://ruheyun.github.io/blog/p/math/math1_hu_29dfeedcc24d252f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Convex-function-graph.png&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;314px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;蒙特卡洛&#34;&gt;蒙特卡洛
+&lt;/h2&gt;&lt;p&gt;Monte Carlo&lt;/p&gt;
+&lt;p&gt;例子：$x$ 是一维随机变量，$p(x)$ 是 $x$ 的概率密度，$f(x)$ 是 $x$ 的标量函数，求 $f(x)$ 的期望：
+&lt;/p&gt;
+$$
+\mathbb{E}_p[f(x)] = \int p(x)f(x)dx
+$$&lt;p&gt;
+事实上，当 $x$ 的维度很高时，上述期望计算是高维积分，难以直接计算。
+蒙特卡洛方法：用平均值来近似期望值。当N很大时，由大数定律，平均值近似期望：&lt;/p&gt;
+$$
+\mathbb{E}_p[f(x)] \approx \frac{1}{N} \sum_{i=1}^N f(x_i) \quad x_i \sim p(x)
+$$&lt;p&gt;
+无偏推导：令 $\mu$ 为真实期望，$\hat{\mu}$ 为平均值
+&lt;/p&gt;
+$$
+E[\hat{\mu}]=E[\frac{1}{N} \sum_{i=1}^{N} f(x_i)]=\frac{1}{N} \sum_{i=1}^{N} E[f(x_i)]=\frac{1}{N} \sum_{i=1}^{N} \mu=\mu
+$$&lt;h2 id=&#34;jacobian-矩阵&#34;&gt;Jacobian 矩阵
+&lt;/h2&gt;&lt;p&gt;向量对向量求导得到的矩阵通常就是雅可比矩阵（Jacobian matrix）。&lt;/p&gt;
+&lt;h2 id=&#34;hessian-矩阵&#34;&gt;Hessian 矩阵
+&lt;/h2&gt;&lt;p&gt;对多元函数求&lt;strong&gt;一阶导数&lt;/strong&gt;得到的是&lt;strong&gt;梯度&lt;/strong&gt;，而对函数求&lt;strong&gt;二阶导数&lt;/strong&gt;（或者说对梯度再求一阶导数）得到的是&lt;strong&gt;黑塞矩阵（Hessian Matrix）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;常用的衡量两个概率分布 P，Q 的距离或差异方法。&lt;/p&gt;
+&lt;h2 id=&#34;total-variation-distance&#34;&gt;Total Variation Distance
+&lt;/h2&gt;&lt;p&gt;总变差距离：两个分布曲线之间‘面积差’的一半。缺点：高维时难以估计。&lt;/p&gt;
+&lt;p&gt;连续：&lt;/p&gt;
+$$D_{TV}(P, Q) = \frac{1}{2} \int \mid p(x) - q(x) \mid dx$$&lt;p&gt;离散：&lt;/p&gt;
+$$D_{TV}(P, Q) = \frac{1}{2} \sum_i \mid p_i - q_i \mid$$&lt;h2 id=&#34;kl-divergence&#34;&gt;KL Divergence
+&lt;/h2&gt;&lt;p&gt;KL 散度：用Q去近似P，会额外损失多少编码长度。最大似然估计（MLE）本质就是最小KL散度。&lt;/p&gt;
+&lt;p&gt;连续：&lt;/p&gt;
+$$D_{KL}(P \parallel Q) = \int p(x) log \frac{p(x)}{q(x)} dx$$&lt;blockquote&gt;
+&lt;p&gt;KL散度是非对称的，将P和Q换个位置后不等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;jensen-shannon-divergence&#34;&gt;Jensen-Shannon Divergence
+&lt;/h2&gt;&lt;p&gt;JS 散度：对称、有界、比KL稳定，常用于GAN的优化函数。&lt;/p&gt;
+&lt;p&gt;连续：&lt;/p&gt;
+$$JS(P, Q) = \frac{1}{2} D_{KL} (P \parallel M) + \frac{1}{2} D_{KL} (Q \parallel M)$$&lt;p&gt;其中：&lt;/p&gt;
+$$M = \frac{P + Q}{2}$$&lt;h2 id=&#34;fisher-divergence&#34;&gt;Fisher Divergence
+&lt;/h2&gt;&lt;p&gt;几何意义：两个分布的分数场，即概率流形上的梯度方向。基于分数的扩散模型中核心思想。&lt;/p&gt;
+&lt;p&gt;连续：&lt;/p&gt;
+$$D_F (P \parallel Q) = E_P [\parallel \nabla_x log p(x) - \nabla_x log q(x) \parallel^2]$$&lt;h2 id=&#34;wasserstein-distance&#34;&gt;Wasserstein Distance
+&lt;/h2&gt;&lt;p&gt;Earth Mover Distance&lt;/p&gt;
+&lt;p&gt;地球移动距离（推土机距离）：把P看作一堆土，Q看作目标土堆，将P搬运到Q的最小搬运成本。&lt;/p&gt;
+$$W(P, Q) = inf_{\gamma \in \prod(P, Q)} E_{(x,y) \sim \gamma} [\parallel x - y \parallel]$$&lt;h2 id=&#34;mahalanobis-distance&#34;&gt;Mahalanobis Distance
+&lt;/h2&gt;&lt;p&gt;马氏距离：考虑协方差后的‘真实欧式距离’。&lt;/p&gt;
+$$d_M(x,y) = \sqrt{(x - y)^T \Sigma^{-1} (x - y)}$$</description>
+        </item>
+        <item>
         <title>论文阅读汇总</title>
         <link>https://ruheyun.github.io/blog/p/paper-reading/</link>
         <pubDate>Fri, 06 Feb 2026 14:55:22 +0800</pubDate>
@@ -120,6 +248,309 @@
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/2405.17724&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models&lt;/a&gt; 2024&lt;/p&gt;
 &lt;p&gt;Privacy Preserving Diffusion Models for Mixed-Type Tabular Data Generation 2025&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Jupyter notebook笔记</title>
+        <link>https://ruheyun.github.io/blog/p/jupyter/</link>
+        <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ruheyun.github.io/blog/p/jupyter/</guid>
+        <description>&lt;img src="https://ruheyun.github.io/blog/p/jupyter/jupyter.jpg" alt="Featured image of post Jupyter notebook笔记" /&gt;&lt;h2 id=&#34;jupyter-安装&#34;&gt;Jupyter 安装
+&lt;/h2&gt;&lt;p&gt;如果通过 &lt;code&gt;vscode&lt;/code&gt; 或者 &lt;code&gt;pycharm&lt;/code&gt; 运行 &lt;code&gt;jupyter notebook&lt;/code&gt; 只需安装下面这个包即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install jupyterlab
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果需要在浏览器打开 &lt;code&gt;jupyter notebook&lt;/code&gt; ，除了安装上面的包外还需安装下面的包&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install ipykernel
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;并且需要在安装上述两个包的环境中，注册内核&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python -m ipykernel install --user --name myenv --display-name &amp;#34;Python (myenv)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;参数解释：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python -m ipykernel&lt;/code&gt; 以模块方式运行 &lt;code&gt;ipykernel&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;install&lt;/code&gt; 注册一个内核到 &lt;code&gt;jupyter&lt;/code&gt; 中&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;--user&lt;/code&gt; 按用户安装，而非系统全局，无需管理员权限。内核规格会写入 &lt;code&gt;~/.local/share/jupyter/kernels/&lt;/code&gt;（Linux/macOS）或 &lt;code&gt;%APPDATA%/jupyter/kernels/&lt;/code&gt;（Windows）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;--name myenv&lt;/code&gt; 内核的内部标识名，必须唯一。该名称用于 &lt;code&gt;jupyter&lt;/code&gt; 内部识别，用户看不到&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;--display-name &amp;quot;Python(myenv)&amp;quot;&lt;/code&gt; 在浏览器 &lt;code&gt;jupyter&lt;/code&gt; 界面显示的名称，用户在下拉内核菜单中看到的名称&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上述注册内核命令中，可以自定义的是 &lt;code&gt;myenv&lt;/code&gt; 和 &lt;code&gt;&amp;quot;Python(myenv)&amp;quot;&lt;/code&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用
+&lt;/h2&gt;&lt;p&gt;如果是 &lt;code&gt;vscode&lt;/code&gt; 或者 &lt;code&gt;pycharm&lt;/code&gt; 中，只需要打开 &lt;code&gt;jupyter notebook&lt;/code&gt; ，然后选择激活的环境名称即可；&lt;/p&gt;
+&lt;p&gt;如果是浏览器打开， 则需要在命令行窗口（cmd）里先激活环境，再输入 &lt;code&gt;jupyter notebook&lt;/code&gt; 即可自动跳转浏览器打开，并且打开路径是命令行窗口中执行命令的路径&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda activate python3.12  # 先激活安装了上述两种包的环境
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jupyter notebook  # 打开jupyter
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;删除内核&#34;&gt;删除内核
+&lt;/h2&gt;&lt;p&gt;如果不再需要使用浏览器打开 &lt;code&gt;jupyter&lt;/code&gt; 则可以使用下述命令删除注册的内核&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jupyter kernelspec remove myenv
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这个命令里，&lt;code&gt;myenv&lt;/code&gt; 是注册内核时对应的 &lt;code&gt;--name&lt;/code&gt; 的参数设置。注意这里只是删除内核，上述安装的包，以及环境都没有删除。&lt;/p&gt;
+&lt;h2 id=&#34;转换md文件&#34;&gt;转换md文件
+&lt;/h2&gt;&lt;p&gt;需要先安装两个依赖包&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install nbconvert pandoc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后使用下面命令即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jupyter nbconvert --to &amp;lt;format&amp;gt; &amp;lt;notebook&amp;gt;.ipynb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注意&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;format: 需要转换的格式，比如 markdown、html、py&lt;/li&gt;
+&lt;li&gt;notebook: 替换为你 jupyter notebook 的名字&lt;/li&gt;
+&lt;li&gt;会在当前文件夹下生成文档&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>pytorch使用</title>
+        <link>https://ruheyun.github.io/blog/p/torch/</link>
+        <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ruheyun.github.io/blog/p/torch/</guid>
+        <description>&lt;img src="https://ruheyun.github.io/blog/p/torch/torch.jpg" alt="Featured image of post pytorch使用" /&gt;&lt;h1 id=&#34;pytorch笔记&#34;&gt;Pytorch笔记
+&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pytorch.org/get-started/locally/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pytorch官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pytorch.org/get-started/previous-versions/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;历史版本网站&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;torch安装&#34;&gt;torch安装
+&lt;/h2&gt;&lt;p&gt;这里以历史版本 &lt;code&gt;2.5.1&lt;/code&gt; 为例，进入历史版本网站，找到 &lt;code&gt;v2.5.1&lt;/code&gt;，复制命令安装即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.5&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torchvision&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.20&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torchaudio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.5&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;download&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pytorch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;org&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;whl&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cu118&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;后面带 &lt;code&gt;cu&lt;/code&gt; 表示安装的是 &lt;code&gt;gpu&lt;/code&gt; 版本&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.5&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torchvision&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.20&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torchaudio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.5&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 或者&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.5&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torchvision&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.20&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torchaudio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.5&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;download&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pytorch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;org&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;whl&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cpu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;默认是 &lt;code&gt;cpu&lt;/code&gt;，或者指定版本为 &lt;code&gt;cpu&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;记得激活指定的 &lt;code&gt;conda&lt;/code&gt; 环境，不然会安装到默认环境里，造成不同版本的冲突。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;测试&#34;&gt;测试
+&lt;/h2&gt;&lt;p&gt;安装完成后，可以在命令行，先输入 &lt;code&gt;python&lt;/code&gt; 进入&lt;code&gt;python的交互式编程模式&lt;/code&gt;，然后依次输入下面代码&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;导入torch&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import torch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;查看pytorch安装版本号&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(torch.__version__)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;查看cuda是否可用，即判断是gpu还是cpu的pytorch&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(torch.cuda.is_available())
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;返回gpu型号&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(torch.cuda.get_device_name(0))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;返回gpu的数量&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(torch.cuda.device_count())
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;查看cuda版本&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(torch.version.cuda)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;检查cudnn是否可以用&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(torch.backends.cudnn.version())
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;from torch.backends import cudnn
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cudnn.is_available()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;保存加载模型权重&#34;&gt;保存/加载模型权重
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# pytorch中模型的保存与加载&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 1.保存模型权重&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;torch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;save&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;teacher&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;state_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(),&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;teacher_model.pth&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 2.加载模型权重&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;teacher&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TeacherModel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# 重新实例化模型&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;teacher&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;load_state_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;torch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;load&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;teacher_model.pth&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;teacher&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;eval&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# 切换到评估模式&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;自定义保存路径&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# ---------------保存到自定义路径------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import os
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import torch
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 定义保存路径
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;save_dir = &amp;#34;./models/&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;os.makedirs(save_dir, exist_ok=True)  # 如果目录不存在则创建
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 定义保存文件路径
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;save_path = os.path.join(save_dir, &amp;#34;teacher_model.pth&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 保存模型权重
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;torch.save(teacher.state_dict(), save_path)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(f&amp;#34;模型已保存到: {save_path}&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;保存加载模型&#34;&gt;保存/加载模型
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 1.保存模型&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;torch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;save&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;teacher&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;teacher_full_model.pth&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 2.加载模型, 不需要重新实例化即可加载&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;teacher&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;torch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;load&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;teacher_full_model.pth&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;teacher&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;eval&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;保存模型权重与保存模型的区别在于，保存模型权重不会保存网络结构，因此文件占用会比较小，建议只保存模型权重。&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         <item>
@@ -3269,17 +3700,20 @@ $$&lt;h4 id=&#34;实验细节&#34;&gt;实验细节
 &lt;p&gt;&lt;del&gt;hello world！&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;字体加下划线用：&amp;lt;u&amp;gt;hello world!&amp;lt;/u&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;u&gt;hello world!&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;字体下标表示用：H~2~o&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;字体下标表示用：H~2~o&lt;/code&gt; &lt;code&gt;部分markdown不能解析，需使用 H&amp;lt;sub&amp;gt;2&amp;lt;/sub&amp;gt;o&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;H&lt;del&gt;2&lt;/del&gt;o&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;字体上标表示用：n^2^&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;o&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;字体上标表示用：n^2^&lt;/code&gt; &lt;code&gt;部分markdown不能解析，需使用 n&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;n^2^&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;字体高亮用：==字体内容==&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;n&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;字体高亮用：==字体内容==&lt;/code&gt; &lt;code&gt;部分markdown不能解析，需使用 &amp;lt;mark&amp;gt;hello world!&amp;lt;/mark&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;==hello world!==&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;hello world!&lt;/mark&gt;&lt;/p&gt;
 &lt;h2 id=&#34;表情符号&#34;&gt;表情符号
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;常用表情符号：:smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile:  :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary:&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;:+1: :-1: :100: :clap: :bell: :gift: :question: :bomb: :heart: :coffee: :cyclone: :bow: :kiss: :pray: :sweat_drops: :hankey: :exclamation: :anger:&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;:smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile:  :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary:&lt;/p&gt;
-&lt;p&gt;:+1: :-1: :100: :clap: :bell: :gift: :question: :bomb: :heart: :coffee: :cyclone: :bow: :kiss: :pray: :sweat_drops: :hankey: :exclamation: :anger:&lt;/p&gt;
+&lt;p&gt;&amp;#x1f604; &amp;#x1f606; &amp;#x1f635; &amp;#x1f62d; &amp;#x1f630; &amp;#x1f605;  &amp;#x1f622; &amp;#x1f624; &amp;#x1f60d; &amp;#x263a;&amp;#xfe0f; &amp;#x1f60e; &amp;#x1f629;&lt;/p&gt;
+&lt;p&gt;&amp;#x1f44d; &amp;#x1f44e; &amp;#x1f4af; &amp;#x1f44f; &amp;#x1f514; &amp;#x1f381; &amp;#x2753; &amp;#x1f4a3; &amp;#x2764;&amp;#xfe0f; &amp;#x2615; &amp;#x1f300; &amp;#x1f647; &amp;#x1f48b; &amp;#x1f64f; &amp;#x1f4a6; &amp;#x1f4a9; &amp;#x2757; &amp;#x1f4a2;&lt;/p&gt;
 &lt;h2 id=&#34;引用&#34;&gt;引用
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;引用内容用：&amp;gt; 内容&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;二级引用用：&amp;gt;&amp;gt; 内容&lt;/code&gt;&lt;/p&gt;
@@ -3726,8 +4160,8 @@ $$</description>
 &lt;/ol&gt;
 &lt;h2 id=&#34;示例&#34;&gt;示例：
 &lt;/h2&gt;&lt;p&gt;这是一个段落，中间可以使用 {{&amp;lt; highlight go &amp;gt;}}这样的内联短代码 {{&amp;lt; /highlight &amp;gt;}}。&lt;/p&gt;
-&lt;p&gt;或者调用 emoji 函数：{{% emojify &amp;ldquo;:smile:&amp;rdquo; %}}&lt;/p&gt;
-&lt;p&gt;当你在内容中写 {{% emojify &amp;ldquo;:smile:&amp;rdquo; %}} 时，Hugo 会去 &lt;code&gt;layouts/shortcodes/&lt;/code&gt; 目录下寻找 &lt;code&gt;emojify.html&lt;/code&gt; 模板文件。&lt;/p&gt;
+&lt;p&gt;或者调用 emoji 函数：{{% emojify &amp;ldquo;&amp;#x1f604;&amp;rdquo; %}}&lt;/p&gt;
+&lt;p&gt;当你在内容中写 {{% emojify &amp;ldquo;&amp;#x1f604;&amp;rdquo; %}} 时，Hugo 会去 &lt;code&gt;layouts/shortcodes/&lt;/code&gt; 目录下寻找 &lt;code&gt;emojify.html&lt;/code&gt; 模板文件。&lt;/p&gt;
 &lt;p&gt;具体操作看本文&lt;code&gt;5.2.3&lt;/code&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;与块级短代码的区别&#34;&gt;与块级短代码的区别：
 &lt;/h2&gt;&lt;ul&gt;
@@ -3735,14 +4169,14 @@ $$</description>
 &lt;li&gt;&lt;strong&gt;块级短代码&lt;/strong&gt;：单独成块，通常用于插入图片、视频等较大元素&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;在-emoji-场景中的使用&#34;&gt;在 Emoji 场景中的使用：
-&lt;/h2&gt;&lt;p&gt;{{% emojify &amp;ldquo;:smile:&amp;rdquo; %}}   // 会渲染为 😄&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;{{% emojify &amp;ldquo;&amp;#x1f604;&amp;rdquo; %}}   // 会渲染为 😄&lt;/p&gt;
 &lt;p&gt;这样你就可以在不启用全局 &lt;code&gt;enableEmoji&lt;/code&gt; 的情况下，有选择性地在特定位置使用 Emoji 了。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;但是好像这样做不行，下面是解决方案：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;emojify-不是短代码而是模板函数&#34;&gt;&lt;code&gt;emojify&lt;/code&gt; 不是短代码，而是模板函数
 &lt;/h3&gt;&lt;p&gt;Hugo 的 &lt;code&gt;emojify&lt;/code&gt; 是一个&lt;strong&gt;模板函数（template function）&lt;/strong&gt;，&lt;strong&gt;不是内置短代码&lt;/strong&gt;。因此以下写法&lt;strong&gt;无法直接使用&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;{{% emojify &amp;ldquo;:smile:&amp;rdquo; %}}   // 无效（Hugo会报错）&lt;/p&gt;
+&lt;p&gt;{{% emojify &amp;ldquo;&amp;#x1f604;&amp;rdquo; %}}   // 无效（Hugo会报错）&lt;/p&gt;
 &lt;h3 id=&#34;正确用法&#34;&gt;正确用法
 &lt;/h3&gt;&lt;h4 id=&#34;方式-1全局启用推荐&#34;&gt;方式 1：全局启用（推荐）
 &lt;/h4&gt;&lt;p&gt;在 &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt; 中设置：&lt;/p&gt;
@@ -3786,7 +4220,7 @@ $$</description>
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;在 Markdown 中使用：{{% emojify &amp;ldquo;:smile:&amp;rdquo; %}} 会被渲染为 😄&lt;/li&gt;
+&lt;li&gt;在 Markdown 中使用：{{% emojify &amp;ldquo;&amp;#x1f604;&amp;rdquo; %}} 会被渲染为 😄&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：不能更改themes文件夹下的文件，要复制到主文件夹对应文件夹下，如下图：&lt;/p&gt;
 &lt;img src=&#34;image-20260129142644914.png&#34; alt=&#34;image-20260129142644914&#34; style=&#34;zoom:80%;&#34; /&gt;
@@ -3801,7 +4235,7 @@ $$</description>
 	&lt;/thead&gt;
 	&lt;tbody&gt;
 			&lt;tr&gt;
-					&lt;td&gt;{{% emojify &amp;ldquo;:smile:&amp;rdquo; %}}&lt;/td&gt;
+					&lt;td&gt;{{% emojify &amp;ldquo;&amp;#x1f604;&amp;rdquo; %}}&lt;/td&gt;
 					&lt;td&gt;❌&lt;/td&gt;
 					&lt;td&gt;&lt;code&gt;emojify&lt;/code&gt; 不是短代码，不能这样用&lt;/td&gt;
 			&lt;/tr&gt;
