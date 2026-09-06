@@ -10,9 +10,10 @@
 <meta property='og:description' content="MathType安装、使用笔记">
 <meta property='og:url' content='https://ruheyun.github.io/blog/p/mathtype/'>
 <meta property='og:site_name' content='RuHeYun'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='mathtype' /><meta property='article:published_time' content='2026-02-25T11:09:36&#43;08:00'/><meta property='article:modified_time' content='2026-02-25T11:34:46&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='mathtype' /><meta property='article:published_time' content='2026-02-25T11:09:36&#43;08:00'/><meta property='article:modified_time' content='2026-09-06T22:59:19&#43;08:00'/><meta property='og:image' content='https://ruheyun.github.io/blog/p/mathtype/mathtype.jpg' />
 <meta name="twitter:title" content="MathType使用笔记">
-<meta name="twitter:description" content="MathType安装、使用笔记">
+<meta name="twitter:description" content="MathType安装、使用笔记"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://ruheyun.github.io/blog/p/mathtype/mathtype.jpg' />
     <link rel="shortcut icon" href="/blog/favicon.ico" />
 
     </head>
@@ -272,8 +273,20 @@
 
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/blog/p/mathtype/">
+                <img src="/blog/p/mathtype/mathtype_hu_708c77e830e631e.jpg"
+                        srcset="/blog/p/mathtype/mathtype_hu_708c77e830e631e.jpg 800w, /blog/p/mathtype/mathtype_hu_b7370c69964bf4b0.jpg 1600w"
+                        width="800" 
+                        height="528" 
+                        loading="lazy"
+                        alt="Featured image of post MathType使用笔记" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
@@ -337,24 +350,27 @@
 </blockquote>
 <p>MathType是一款数学公式编辑器，大多数用于在word和ppt中插入公式（对于写论文和做论文阅读汇报时）。它的主要优势就是所见即所得，通过鼠标点击就可以完成公式的编辑，无需书写Latex代码。</p>
 <h2 id="问题">问题
-</h2><img src="5d75d56d-fbf6-4bba-a045-5b5946025b66_image.png" alt="5d75d56d-fbf6-4bba-a045-5b5946025b66_image" style="zoom:80%;display: block; margin: 0 auto;" />
+</h2><img src="mathtype1.png" alt="mathtype" style="zoom:80%;display: block; margin: 0 auto;" />
 <p>这个错误是因为 <strong>MathType</strong> 的 <code>MathPage.WLL</code> 文件丢失或未正确放置到 Office 的启动目录中。以下是解决方法：</p>
 <p><strong>1. 找到 MathType 安装目录</strong></p>
 <ul>
 <li>右键点击 MathType 桌面图标，查看属性找到安装位置</li>
 </ul>
-<p><strong>2. 定位 MathPage.WLL 文件</strong> 根据以下路径找到文件：</p>
+<p><strong>2. 定位 MathPage.WLL 文件</strong></p>
+<p>根据以下路径找到文件：</p>
 <ul>
 <li><code>\MathType\MathPage\64\MathPage.wll</code>（64位系统）</li>
 <li><code>\MathType\MathPage\32\MathPage.wll</code>（32位系统）</li>
 </ul>
-<p><strong>3. 复制文件到 Office 目录</strong> 将找到的 <code>MathPage.wll</code> 文件复制到以下目录：</p>
+<p><strong>3. 复制文件到 Office 目录</strong></p>
+<p>将找到的 <code>MathPage.wll</code> 文件复制到以下目录：</p>
 <ul>
 <li>Office 2016/2019/365：<code>C:\Program Files\Microsoft Office\root\Office16</code></li>
 <li>Office 2013: <code>C:\Program Files\Microsoft Office\Office15</code></li>
 <li>Office 2010: <code>C:\Program Files\Microsoft Office\Office14</code></li>
 </ul>
-<p><strong>4. 重启 Word</strong> 关闭所有 Word 文档，重新启动 Word 即可。</p>
+<p><strong>4. 重启 Word</strong></p>
+<p>关闭所有 Word 文档，重新启动 Word 即可。</p>
 <blockquote>
 <p>如果文件已存在，直接替换即可</p>
 <p>按照以上步骤操作后，错误应该就能解决了！</p>
@@ -394,7 +410,7 @@
 
 
         <span>
-            最后更新于 2026-02-25
+            最后更新于 2026-09-06
         </span>
     </section><section class="article-lastmod">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
