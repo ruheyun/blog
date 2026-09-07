@@ -12,7 +12,7 @@
         <pubDate>Tue, 27 Jan 2026 11:32:30 +0800</pubDate>
         
         <guid>https://ruheyun.github.io/blog/p/post-template/</guid>
-        <description>&lt;p&gt;关于Hugo的Stack渲染Markdown语言的笔记&lt;/p&gt;
+        <description>&lt;img src="https://ruheyun.github.io/blog/p/post-template/post.jpg" alt="Featured image of post PostTemplate" /&gt;&lt;p&gt;关于Hugo的Stack渲染Markdown语言的笔记&lt;/p&gt;
 &lt;h1 id=&#34;文章模版&#34;&gt;文章模版
 &lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

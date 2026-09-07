@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>RuHeYun</copyright>
-        <lastBuildDate>Sun, 08 Feb 2026 23:23:59 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/tags/conda/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 07 Sep 2026 23:42:49 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/tags/conda/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Conda笔记</title>
         <link>https://ruheyun.github.io/blog/p/conda-note/</link>
         <pubDate>Sun, 08 Feb 2026 22:47:18 +0800</pubDate>
         
         <guid>https://ruheyun.github.io/blog/p/conda-note/</guid>
-        <description>&lt;h2 id=&#34;基本使用命令&#34;&gt;基本使用命令
+        <description>&lt;img src="https://ruheyun.github.io/blog/p/conda-note/conda.jpg" alt="Featured image of post Conda笔记" /&gt;&lt;h2 id=&#34;基本使用命令&#34;&gt;基本使用命令
 &lt;/h2&gt;&lt;p&gt;以下命令（代码）需要再 &lt;code&gt;cmd&lt;/code&gt; 里输入。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;查看 conda 版本&lt;/li&gt;
