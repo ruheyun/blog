@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>RuHeYun</copyright>
-        <lastBuildDate>Mon, 07 Sep 2026 23:58:05 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/tags/js/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 08 Sep 2026 22:58:49 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/tags/js/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo网站美化</title>
         <link>https://ruheyun.github.io/blog/p/hugo-beautify/</link>
         <pubDate>Tue, 27 Jan 2026 11:01:58 +0800</pubDate>
@@ -969,7 +969,47 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;section&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;数学公式&#34;&gt;数学公式
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;stack&lt;/code&gt; 主题默认自带了对数学公式的扩展 &lt;code&gt;KaTex&lt;/code&gt;，因此如果安装的是 &lt;code&gt;stack&lt;/code&gt; 主题，只需开启数学支持即可:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;要全局启用 KaTeX，需在项目配置中将参数 &lt;code&gt;math&lt;/code&gt; 设置为 &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;要在单个页面启用 KaTeX，需在内容文件中包含参数 &lt;code&gt;math: true&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;全局开启 KaTex，会在所有页面加载 KaTex，性能相较于单个页面手动开启差一点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果没有安装任何主题，那么 hugo 项目本身是不支持数学公式的，因此需要通过使用第三方 JavaScript 库来启用数学公式支持：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在 &lt;code&gt;/layouts/partials/math.html&lt;/code&gt; 下创建一个 局部模板，命名为&lt;code&gt;math.html&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;在该 partial 中引用 &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/autorender.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Auto-render 扩展&lt;/a&gt;，或将这些脚本托管在本地。&lt;/li&gt;
+&lt;li&gt;像下面这样在你的模板中引入该 partial:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; partial &lt;span class=&#34;s2&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;表情&#34;&gt;表情
+&lt;/h2&gt;&lt;p&gt;如需全局启用 Emoji：在站点&lt;a class=&#34;link&#34; href=&#34;%28https://gohugo.io/getting-started/configuration/%29&#34; &gt;配置文件&lt;/a&gt;中将 &lt;code&gt;enableEmoji&lt;/code&gt; 设为 &lt;code&gt;true&lt;/code&gt;，即可在内容文件中直接输入 Emoji 简写代码。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:smile:  # 会自动渲染为 😄
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Emoji 速查表（&lt;a class=&#34;link&#34; href=&#34;https://www.webfx.com/tools/emoji-cheat-sheet/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;cheat sheet&lt;/a&gt;）是查询简写代码的实用参考资源。&lt;/p&gt;
+</description>
         </item>
         
     </channel>

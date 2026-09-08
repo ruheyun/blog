@@ -39,6 +39,8 @@
 &lt;p&gt;&lt;code&gt;字体高亮用：==字体内容==&lt;/code&gt; &lt;code&gt;部分markdown不能解析，需使用 &amp;lt;mark&amp;gt;hello world!&amp;lt;/mark&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;==hello world!==&lt;/p&gt;
 &lt;p&gt;&lt;mark&gt;hello world!&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;键盘符号&lt;/code&gt; &lt;code&gt;使用 &amp;lt;kbd&amp;gt;CTRL&amp;lt;/kbd&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;&lt;/p&gt;
 &lt;h2 id=&#34;表情符号&#34;&gt;表情符号
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;常用表情符号：:smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile:  :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary:&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;:+1: :-1: :100: :clap: :bell: :gift: :question: :bomb: :heart: :coffee: :cyclone: :bow: :kiss: :pray: :sweat_drops: :hankey: :exclamation: :anger:&lt;/code&gt;&lt;/p&gt;

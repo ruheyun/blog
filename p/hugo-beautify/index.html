@@ -10,7 +10,7 @@
 <meta property='og:description' content="对网站做简单的更改和美化，使网站功能更加完善。">
 <meta property='og:url' content='https://ruheyun.github.io/blog/p/hugo-beautify/'>
 <meta property='og:site_name' content='RuHeYun'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:tag' content='Stack' /><meta property='article:tag' content='JS' /><meta property='article:tag' content='CSS' /><meta property='article:tag' content='giscus' /><meta property='article:published_time' content='2026-01-27T11:01:58&#43;08:00'/><meta property='article:modified_time' content='2026-09-07T23:58:05&#43;08:00'/><meta property='og:image' content='https://ruheyun.github.io/blog/p/hugo-beautify/26_21.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:tag' content='Stack' /><meta property='article:tag' content='JS' /><meta property='article:tag' content='CSS' /><meta property='article:tag' content='giscus' /><meta property='article:published_time' content='2026-01-27T11:01:58&#43;08:00'/><meta property='article:modified_time' content='2026-09-08T22:58:49&#43;08:00'/><meta property='og:image' content='https://ruheyun.github.io/blog/p/hugo-beautify/26_21.jpg' />
 <meta name="twitter:title" content="Hugo网站美化">
 <meta name="twitter:description" content="对网站做简单的更改和美化，使网站功能更加完善。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ruheyun.github.io/blog/p/hugo-beautify/26_21.jpg' />
@@ -279,6 +279,8 @@
         <li><a href="#单篇文章显示阅读量">单篇文章显示阅读量</a></li>
       </ol>
     </li>
+    <li><a href="#数学公式">数学公式</a></li>
+    <li><a href="#表情">表情</a></li>
   </ol>
 </nav>
         </div>
@@ -1316,7 +1318,47 @@
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="n">section</span><span class="o">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h2 id="数学公式">数学公式
+</h2><p><code>stack</code> 主题默认自带了对数学公式的扩展 <code>KaTex</code>，因此如果安装的是 <code>stack</code> 主题，只需开启数学支持即可:</p>
+<ul>
+<li>要全局启用 KaTeX，需在项目配置中将参数 <code>math</code> 设置为 <code>true</code></li>
+<li>要在单个页面启用 KaTeX，需在内容文件中包含参数 <code>math: true</code></li>
+</ul>
+<blockquote>
+<p>全局开启 KaTex，会在所有页面加载 KaTex，性能相较于单个页面手动开启差一点。</p>
+</blockquote>
+<p>如果没有安装任何主题，那么 hugo 项目本身是不支持数学公式的，因此需要通过使用第三方 JavaScript 库来启用数学公式支持：</p>
+<ol>
+<li>在 <code>/layouts/partials/math.html</code> 下创建一个 局部模板，命名为<code>math.html</code>。</li>
+<li>在该 partial 中引用 <a class="link" href="https://katex.org/docs/autorender.html"  target="_blank" rel="noopener"
+    >Auto-render 扩展</a>，或将这些脚本托管在本地。</li>
+<li>像下面这样在你的模板中引入该 partial:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{{</span> end <span class="o">}}</span>
+</span></span></code></pre></td></tr></table>
 </div>
+</div><h2 id="表情">表情
+</h2><p>如需全局启用 Emoji：在站点<a class="link" href="%28https://gohugo.io/getting-started/configuration/%29" >配置文件</a>中将 <code>enableEmoji</code> 设为 <code>true</code>，即可在内容文件中直接输入 Emoji 简写代码。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">:smile:  # 会自动渲染为 😄
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Emoji 速查表（<a class="link" href="https://www.webfx.com/tools/emoji-cheat-sheet/"  target="_blank" rel="noopener"
+    >cheat sheet</a>）是查询简写代码的实用参考资源。</p>
+
 </section>
 
 
@@ -1359,7 +1401,7 @@
 
 
         <span>
-            最后更新于 2026-09-07
+            最后更新于 2026-09-08
         </span>
     </section><section class="article-lastmod">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
@@ -1583,7 +1625,7 @@
             本站总访问量 <span id="vercount_value_site_pv">Loading...</span> 次
             总访客数 <span id="vercount_value_site_uv">Loading...</span> 人 ·
             共发表了15篇文章  
-            总计17.48k字
+            总计17.85k字
         </p>
         
         <p id="blog-runtime" style="text-align: left; font-size: 0.9em; margin: 0.5em 0; color: #888;">
