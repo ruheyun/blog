@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>RuHeYun</copyright>
-        <lastBuildDate>Wed, 09 Sep 2026 23:54:35 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 10 Sep 2026 23:45:33 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>📚阅读书单</title>
         <link>https://ruheyun.github.io/blog/p/readbook/</link>
         <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
@@ -178,7 +178,7 @@ t f(x_1) + (1 - t) f(x_2) \geq f(tx_1 + (1 - t)x_2), \quad 0 \leq t \leq 1.
 $$&lt;p&gt;&lt;img src=&#34;https://ruheyun.github.io/blog/p/math/math1.png&#34;
 	width=&#34;767&#34;
 	height=&#34;586&#34;
-	srcset=&#34;https://ruheyun.github.io/blog/p/math/math1_hu_93894dc9c3a4fcee.png 480w, https://ruheyun.github.io/blog/p/math/math1_hu_29dfeedcc24d252f.png 1024w&#34;
+	srcset=&#34;https://ruheyun.github.io/blog/p/math/math1_hu_e9b7689f6f553c49.png 480w, https://ruheyun.github.io/blog/p/math/math1_hu_132b7cc043785dec.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Convex-function-graph.png&#34;
@@ -249,6 +249,15 @@ $$d_M(x,y) = \sqrt{(x - y)^T \Sigma^{-1} (x - y)}$$</description>
     &gt;ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models&lt;/a&gt; 2024&lt;/p&gt;
 &lt;p&gt;Privacy Preserving Diffusion Models for Mixed-Type Tabular Data Generation 2025&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>uv环境管理工具</title>
+        <link>https://ruheyun.github.io/blog/p/uv/</link>
+        <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ruheyun.github.io/blog/p/uv/</guid>
+        <description>&lt;img src="https://ruheyun.github.io/blog/uv.jpg" alt="Featured image of post uv环境管理工具" /&gt;&lt;h1 id=&#34;uv包管理工具&#34;&gt;UV包管理工具
+&lt;/h1&gt;</description>
         </item>
         <item>
         <title>WSL2 &#43; Codex</title>

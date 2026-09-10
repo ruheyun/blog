@@ -7,6 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>RuHeYun</copyright><atom:link href="https://ruheyun.github.io/blog/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>uv环境管理工具</title>
+        <link>https://ruheyun.github.io/blog/p/uv/</link>
+        <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ruheyun.github.io/blog/p/uv/</guid>
+        <description>&lt;img src="https://ruheyun.github.io/blog/uv.jpg" alt="Featured image of post uv环境管理工具" /&gt;&lt;h1 id=&#34;uv包管理工具&#34;&gt;UV包管理工具
+&lt;/h1&gt;</description>
+        </item>
+        <item>
         <title>Jupyter notebook笔记</title>
         <link>https://ruheyun.github.io/blog/p/jupyter/</link>
         <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>

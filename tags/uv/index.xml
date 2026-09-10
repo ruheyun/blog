@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Uv on RuHeYun</title>
+        <link>https://ruheyun.github.io/blog/tags/uv/</link>
+        <description>Recent content in Uv on RuHeYun</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-CN</language>
+        <copyright>RuHeYun</copyright>
+        <lastBuildDate>Thu, 10 Sep 2026 23:45:33 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/tags/uv/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>uv环境管理工具</title>
+        <link>https://ruheyun.github.io/blog/p/uv/</link>
+        <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ruheyun.github.io/blog/p/uv/</guid>
+        <description>&lt;img src="https://ruheyun.github.io/blog/uv.jpg" alt="Featured image of post uv环境管理工具" /&gt;&lt;h1 id=&#34;uv包管理工具&#34;&gt;UV包管理工具
+&lt;/h1&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
