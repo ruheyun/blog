@@ -7,18 +7,17 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>RuHeYun</copyright>
-        <lastBuildDate>Tue, 15 Sep 2026 23:08:32 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 15 Sep 2026 23:38:32 +0800</lastBuildDate><atom:link href="https://ruheyun.github.io/blog/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Github 笔记</title>
         <link>https://ruheyun.github.io/blog/p/github-note/</link>
         <pubDate>Thu, 19 Feb 2026 17:33:17 +0800</pubDate>
         
         <guid>https://ruheyun.github.io/blog/p/github-note/</guid>
-        <description>&lt;img src="https://ruheyun.github.io/blog/p/github-note/github.jpg" alt="Featured image of post Github 笔记" /&gt;&lt;h2 id=&#34;git和github&#34;&gt;Git和Github
-&lt;/h2&gt;&lt;h3 id=&#34;注册github下载安装git&#34;&gt;注册GitHub，下载安装git
-&lt;/h3&gt;&lt;p&gt;github 使用邮箱注册即可，有 gmail 建议用 gmail。&lt;/p&gt;
+        <description>&lt;img src="https://ruheyun.github.io/blog/p/github-note/github.jpg" alt="Featured image of post Github 笔记" /&gt;&lt;h2 id=&#34;注册github下载安装git&#34;&gt;注册GitHub，下载安装git
+&lt;/h2&gt;&lt;p&gt;github 使用邮箱注册即可，有 gmail 建议用 gmail。&lt;/p&gt;
 &lt;p&gt;git 直接去官网下载对应系统版本，对于 Windows 版直接全部按照默认推荐 next 就行。&lt;/p&gt;
-&lt;h3 id=&#34;设置用户名和邮箱&#34;&gt;设置用户名和邮箱
-&lt;/h3&gt;&lt;p&gt;右键桌面，使用 git bash，进入命令行界面&lt;/p&gt;
+&lt;h2 id=&#34;设置用户名和邮箱&#34;&gt;设置用户名和邮箱
+&lt;/h2&gt;&lt;p&gt;右键桌面，使用 git bash，进入命令行界面&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -51,8 +50,8 @@
 &lt;p&gt;这里的用户名和邮箱可以任意填写，但是建议和注册时的 Github 用户名和邮箱相同&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;img src=&#34;github1.png&#34; alt=&#34;github&#34; style=&#34;zoom:80%;display: block; margin: 0 auto;&#34; /&gt;
-&lt;h3 id=&#34;获取ssh密钥&#34;&gt;获取ssh密钥
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;h2 id=&#34;获取ssh密钥&#34;&gt;获取ssh密钥
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
@@ -77,8 +76,8 @@
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;添加了公钥后，表示本地 git 用户和远程 github 之间建立了信任关系，这样可以将本地代码推送到远程仓库。如果不通过公钥，本地只能下载远程仓库代码，不能上传代码。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;本地初始化&#34;&gt;本地初始化
-&lt;/h3&gt;&lt;p&gt;选择一个文件夹，在这个文件夹路径终端下输入下面命令&lt;/p&gt;
+&lt;h2 id=&#34;本地初始化&#34;&gt;本地初始化
+&lt;/h2&gt;&lt;p&gt;选择一个文件夹，在这个文件夹路径终端下输入下面命令&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -90,8 +89,8 @@
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;该文件夹里会多一个 .git 文件夹（可能是隐藏文件夹），表明该文件夹为一个 git 项目。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;本地常用操作&#34;&gt;本地常用操作
-&lt;/h3&gt;&lt;p&gt;将这个文件夹里更改的文件添加到仓库暂存区（在文件夹里的文件称为工作区）&lt;/p&gt;
+&lt;h2 id=&#34;本地常用操作&#34;&gt;本地常用操作
+&lt;/h2&gt;&lt;p&gt;将这个文件夹里更改的文件添加到仓库暂存区（在文件夹里的文件称为工作区）&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -190,8 +189,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;两台电脑--远程仓库&#34;&gt;两台电脑 + 远程仓库
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;&lt;h2 id=&#34;两台电脑--远程仓库&#34;&gt;两台电脑 + 远程仓库
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
@@ -253,8 +252,8 @@ Select scopes: 勾选 repo（完整控制私有仓库）
 然后使用git clone https://&amp;hellip;
 然后将远程连接协议改为ssh，把生成的token删除即可，以后通过ssh拉取和推送。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;回退代码&#34;&gt;回退代码
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;h2 id=&#34;回退代码&#34;&gt;回退代码
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
