@@ -339,6 +339,39 @@
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;注意：如果 Windows 安装了桌面版 Codex，所有会话是和 WSL 子系统里的会话不互通的，但是使用额度互通。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;常见问题&#34;&gt;常见问题
+&lt;/h2&gt;&lt;p&gt;在 Windows 桌面版 Codex 里每次使用时，总是会重连五次，才会开始思考回答。在 wsl 子系统里没有这个问题。&lt;/p&gt;
+&lt;p&gt;问题原因：不是模型真的需要“重连 5 次才能思考”，而是 Codex 的 WebSocket 连接连续失败，重试 5 次之后退回 HTTPS/SSE，然后任务才真正开始。也就是说由于本地代理的原因，无法通过 WebSocket 连接 Codex，因此在连接失败 5 次后，使用 HTTPS 连接成功。因此如果不在于多等待一会儿，可以不解决此问题。&lt;/p&gt;
+&lt;h3 id=&#34;解决方案1&#34;&gt;解决方案1
+&lt;/h3&gt;&lt;p&gt;在代理软件里，开启 tune 模式（虚拟网卡模式），开启后本机所有网络都通过代理。最简单的办法。&lt;/p&gt;
+&lt;h3 id=&#34;解决方案2&#34;&gt;解决方案2
+&lt;/h3&gt;&lt;p&gt;找到 Codex 的配置文件，.codex\config.toml，将其复制一份命名为 config.toml.bak&lt;/p&gt;
+&lt;p&gt;然后在 config.toml 里添加下面内容&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;model_provider = &amp;#34;chatgpt-http&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[model_providers.chatgpt-http]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;name = &amp;#34;ChatGPT HTTP&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;base_url = &amp;#34;https://chatgpt.com/backend-api/codex&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wire_api = &amp;#34;responses&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;requires_openai_auth = true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;supports_websockets = false
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;这样改动后，可能以前的会话就没有了。&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         
